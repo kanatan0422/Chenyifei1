@@ -1,0 +1,9 @@
+/**index.wxss**/
+
+.usermotto {
+  margin-top: 200px;
+  font-size: 40rpx;
+  font-style: italic;
+  font-weight: 400;
+  color:#333;
+}

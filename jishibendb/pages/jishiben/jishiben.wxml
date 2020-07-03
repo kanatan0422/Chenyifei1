@@ -1,0 +1,21 @@
+<!--pages/jishiben/jishiben.wxml-->
+<view class="page">
+<scroll-view scroll-y class="list-box">
+      <block wx:for="{{mylists}}">
+      <!--根据id确定 每一条内容-->
+       <view class="list-i">
+            <view class="item {{status ? '' :'active'}}" >
+                  <view class="item.content" bindtouchstart="touchS" bindtouchmove="touchM" data-id="{{item.id}}">{{item.content}}</view>
+                  <view class="del-button" bindtap="delete" data-id="{{item.id}}" >删除</view>   
+                  <view class="edit-button" bindtap="edit" data-id="{{item.id}}">编辑</view>   
+            </view>
+            <view class="date">ddl：{{item.time}}</view>   
+      </view>
+      </block>
+</scroll-view>
+<view class="tianjia" position="fixed" bindtap="add">
+      <image class="tupian" src="../../tianjia.png" ></image>
+</view>
+
+
+</view>

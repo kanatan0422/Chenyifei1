@@ -1,0 +1,39 @@
+/* pages/myadd/myadd.wxss */
+.txt-input{
+  border-style: solid ;
+  
+  height: 80px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.btn-box{
+  position: fixed;
+  margin-top: 30px;
+  font-size: 40rpx;
+}
+.cancel{
+  position: fixed;
+  right: 200rpx;
+ 
+}
+.sure{
+  position: fixed;
+  right: 50rpx;
+}
+.delete{
+  position: fixed;
+  left: 20rpx;
+}
+.tishi{
+  font-size: 20px;
+}
+.shijian{
+  font-size: 18px;
+}
+.timeselect{
+ border-style: groove;
+  height: 30px ;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

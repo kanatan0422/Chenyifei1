@@ -1,0 +1,26 @@
+<!--pages/myadd/myadd.wxml-->
+
+<text></text>
+<view>
+<text class="tishi">设置事件截止日期：</text> 
+      <picker mode='date' bindchange="changeDate" class="shijian">
+            <view class="timeselect">{{date}}</view>
+      </picker>
+<text class="tishi">设置事件截止时间：</text>
+       <picker mode='time' bindchange="changeTime" class="shijian">
+            <view class="timeselect">{{time}}</view>
+</picker>
+</view>
+<view class="classname">
+<text class="tishi">事件内容：</text>
+      <input class="txt-input" placeholder="请输入内容" bindinput="change" value="{{content}}"/>
+</view>
+<view>
+<button bindtap="getcheck">设置提醒</button>
+</view>
+<view class ="btn-box">
+     <view class="delete" bindtap="delete" >删除</view>
+     <view class="cancel" bindtap="cancel" >取消</view>
+     <view class="sure" bindtap="sure" >确定</view>
+</view>
+

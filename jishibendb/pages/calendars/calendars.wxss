@@ -1,0 +1,199 @@
+/* pages/calendars/calendars.wxss */
+/* pages/calendar/calendar.wxss */
+ 
+.canlendarBgView {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.canlendarView {
+  color:#fe5959;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.canlendarTopView {
+  height: 80rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  font-family: Microsoft Yahei;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.leftBgView {
+  text-align: right;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+ 
+.leftView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.centerView {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.rightBgView {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.rightView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.weekBgView {
+  height: 50rpx;
+  line-height: 50rpx;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.weekView {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+ 
+.dateBgView {
+  height: 500rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+.dateEmptyView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.datesView {
+  width: 60rpx;
+  height: 60rpx;
+  color:#fe5959;
+  font-size: 35rpx;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateSelectView {
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background-color: #333;
+}
+.tianjia {
+  position: fixed;
+  bottom: 15rpx;
+  right: 10rpx;
+}
+.tupian {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 8rpx;
+}
+.list-box {
+  border-style: groove;
+  position: fixed;
+  bottom: 25rpx;
+  top: 700rpx;
+}
+
+.item{
+  position:relative;
+  top: 0;
+  width: 100%;
+  height: 80rpx;
+}
+.item.content {
+  position: absolute;
+  border-style: ridge;
+  font-size: 110%;
+  font-style: oblique;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+.item .del-button {
+  position: absolute;
+  right: -280rpx;
+  width: 140rpx;
+  height: 112%;
+  background-color: #df3448;
+  color: #fff;
+  top:4rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+}
+.item .edit-button
+{
+  position: absolute;
+  right: -140rpx;
+  width: 140rpx;
+  height: 112%;
+  background-color: #333;
+  color: Azure;
+  top:4rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+}
+.item.active .content{
+  left: -50rpx;
+}
+.item.active .del-button{
+  right: 0;
+}
+.item.active .edit-button
+{
+  right:140rpx;
+}

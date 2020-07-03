@@ -1,0 +1,41 @@
+{
+  "pages":[
+   
+    "pages/jishiben/jishiben",
+    "pages/myadd/myadd",
+    "pages/index/index",
+    "pages/calendars/calendars"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fe5959",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#BA4E39"
+  },
+  "tabBar": {
+    "selectedColor": "#fe5959",
+    "list": [
+      {
+        "pagePath": "pages/jishiben/jishiben",
+        "text": "记事本",
+        "iconPath": "icon/note.png",
+        "selectedIconPath": "icon/_note.png"
+      },
+      {
+      "pagePath": "pages/calendars/calendars",
+      "text": "事件日历",
+      "iconPath": "icon/calender.png",
+      "selectedIconPath": "icon/_calender.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "其他",
+      "iconPath": "icon/user.png",
+      "selectedIconPath": "icon/_user.png"
+    }
+   ],
+   "position":"bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

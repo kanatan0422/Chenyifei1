@@ -1,0 +1,97 @@
+/* pages/jishiben/jishiben.wxss */
+.tupian {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 8px;
+}
+
+.tianjia {
+  position: fixed;
+  top: 10rpx;
+  right: 10rpx;
+}
+
+.list-box {
+  border-style: groove;
+  position: fixed;
+  top: 150rpx;
+  bottom: 50rpx;
+}
+
+.item{
+  position:relative;
+  top: 0;
+  width: 100%;
+  height: 80rpx;
+}
+.item.content {
+  position: absolute;
+  border-style: ridge;
+  font-size: 110%;
+  font-style: oblique;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+.item .del-button {
+  position: absolute;
+  right: -280rpx;
+  width: 140rpx;
+  height: 112%;
+  background-color: #df3448;
+  color: #fff;
+  top:4rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+}
+.item .edit-button
+{
+  position: absolute;
+  right: -140rpx;
+  width: 140rpx;
+  height: 112%;
+  background-color: #333;
+  color: Azure;
+  top:4rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+}
+.item.active .content{
+  left: -50rpx;
+}
+.item.active .del-button{
+  right: 0;
+}
+.item.active .edit-button
+{
+  right:140rpx;
+}
+.date {
+  margin-top: 5px;
+  font-size: 80%;
+}
+
+.tupian1{
+  width: 120rpx;
+  height: 120rpx;
+  
+  position: fixed;
+  bottom: 10px;
+  left: 35px;
+}
+.tupian2{
+  width: 120rpx;
+  height: 130rpx;
+  
+  position: fixed;
+  bottom: 10px;
+  right: 35px;
+}
